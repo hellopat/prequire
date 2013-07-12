@@ -10,7 +10,7 @@ module.exports = function(projectRoot) {
     throw new Error('No keys found in localDependencies in package.json');
   }
 
-  return GLOBAL.pRequire = function(packageKey) {
+  GLOBAL.pRequire = function(packageKey) {
     if (typeof deps[packageKey] === "undefined") {
       throw new Error('No package found for ' + packageKey);
     }
