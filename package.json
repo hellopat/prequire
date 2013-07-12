@@ -1,0 +1,17 @@
+{
+  "name": "prequire",
+  "version": "0.0.0",
+  "description": "Require a file with an identifier not located in node_modules",
+  "main": "index.js",
+  "keywords": [
+    "require",
+    "global"
+  ],
+  "localDependencies": {
+    "base": "test/base",
+    "libIndex": "test/lib",
+    "libOther": "test/lib/other"
+  },
+  "author": "Patrick Clark",
+  "license": "MIT"
+}
